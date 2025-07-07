@@ -70,6 +70,10 @@ Detected ~11,394 novel isoforms alongside 4,272 known isoforms, reflecting the c
 Identified several genes with multiple novel isoforms, including Eif4g1, Cd36, H2-K1, and others known to play important roles in metabolism and adipose biology (talked about earlier/above).  
 Long-read RNA sequencing coupled with FLAIR revealed extensive alternative splicing events not captured by short-read methods.  
 
+![Top Novel Isoform Counts By Gene](./notebooks/top_10_novel_isoform_counts_by_gene.png)  
+
+![Isoform Expression By Type (novel/known)](./notebooks/isoform_expression_by_type.png)
+
 ***
 
 # Limitations
