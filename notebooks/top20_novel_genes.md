@@ -1,0 +1,22 @@
+| gene_id            |   novel_isoform_count | gene_name   |
+|:-------------------|----------------------:|:------------|
+| ENSMUSG00000045983 |                     8 | Eif4g1      |
+| ENSMUSG00000002944 |                     7 | Cd36        |
+| 6:119330000        |                     6 | NA          |
+| ENSMUSG00000061232 |                     6 | H2-K1       |
+| ENSMUSG00000024393 |                     6 | Prrc2a      |
+| ENSMUSG00000036570 |                     5 | Fxyd1       |
+| 5:18470000         |                     5 | NA          |
+| ENSMUSG00000032637 |                     5 | Atxn2l      |
+| 9:123135000        |                     5 | NA          |
+| ENSMUSG00000024991 |                     5 | Eif3a       |
+| ENSMUSG00000025369 |                     5 | Smarcc2     |
+| ENSMUSG00000073418 |                     5 | C4b         |
+| ENSMUSG00000061780 |                     5 | Cfd         |
+| ENSMUSG00000012705 |                     5 | Retn        |
+| ENSMUSG00000090625 |                     5 | Gm20721     |
+| ENSMUSG00000026083 |                     4 | Eif5b       |
+| ENSMUSG00000022961 |                     4 | Son         |
+| 3:10269000         |                     4 | NA          |
+| ENSMUSG00000030278 |                     4 | Cidec       |
+| 15:11839000        |                     4 | NA          |

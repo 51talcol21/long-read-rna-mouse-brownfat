@@ -1,0 +1,18 @@
+# Ignore raw and large data files
+longread-rnaseq-env/
+dataset/*.fastq
+dataset/*.fastq.gz
+references/*.fa
+references/*.gtf
+references/*.fa.gz
+references/*.gtf.gz
+results/
+results/alignments/*.bam
+results/alignments/*.sam
+*_known_juncs.bed
+*.bed
+*.mmi
+
+# Ignore system files
+.DS_Store
+.ipynb_checkpoints
