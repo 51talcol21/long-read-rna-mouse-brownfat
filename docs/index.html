@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Long-Read RNA Isoform Discovery</title>
+  <style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 2em; 
+        line-height: 1.6; 
+        max-width: 900px; 
+    }
+    h1, h2 { 
+        color: #339974;
+    }
+    code { 
+        background: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 4px; 
+    }
+    .section { 
+        margin-bottom: 2em;
+    }
+    .tagline { 
+        font-size: 1.2em;
+        color: #555;
+    }
+    .button {
+        background-color: #336699;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Discovering Novel RNA Isoforms in Mouse Brown Fat</h1>
+  <p class="tagline">My bioinformatics pipeline/technical demo to uncover new RNA transcript variants using long-read RNA sequencing and as a learning tool.</p>
+
+  <div class="section">
+    <h2> Project Summary</h2>
+    <p>
+        This project analyzes a nanopore long-read RNA-seq dataset from <strong>murine (brown) brown adipose tissue</strong>
+        using a reproducible FLAIR-based pipeline. I identified both known and previously unannotated (novel) isoforms and quantify their expression.
+        This project also serves as a personal learning tool for an introduction to bio-informatics, focusing on basic data-analysis/pipeline.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2> Dataset</h2>
+    <p>
+      - Source: NCBI SRA<br>
+      - ID and Link: <a href="https://www.ncbi.nlm.nih.gov/sra/SRR33470049" target="_blank">SRR33470049</a><br>
+      - Technology: Oxford Nanopore long-read sequencing (on GridION) <br>
+      - Tissue: Mouse brown fat <br>
+      - Reference/Annotations: <a href="https://ftp.ensembl.org/pub/release-109/fasta/mus_musculus/dna/" target="_blank">Ensembl FTP</a> <br>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Pipeline Overview</h2>
+    <ul>
+        <li>Environment Setup (Python 3.12, dependency installation, setup working env and directory)</li>
+        <li><a href="../results/qc/NanoPlot-report.html"> Quality Control (NanoPlot) </a></li>
+        <li>Read Alignment (minimap2)</li>
+        <li>Transcript Correction (FLAIR, not the NLP one)</li>
+        <li>Transcript Collapsing</li>
+        <li>Quantification of Isoforms</li>
+        <li>Analysis & Visualization</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2> Results</h2>
+    <ul>
+      <li><strong>11,394</strong> novel isoforms identified</li>
+      <li>Highly variable expression patterns across genes</li>
+      <li>Top novel isoform genes: <code>Eif4g1</code>, <code>Cd36</code>, <code>H2-K1</code></li>
+      <li>Established a decent pipeline for data-analysis and learned basic genomics concepts while doing it! :)</li>
+    </ul>
+    <p><em>These results highlight previously unknown RNA diversity (with some admitted limitations) in metabolically active brown fat tissue.</em></p>
+
+    <img src="../notebooks/top_10_novel_isoform_counts_by_gene.png" alt="Top Novel Isoform Counts by Gene">
+    <img src="../notebooks/top_genes_with_most_novel_isoforms.png" alt="Top Genes with Most Novel Isoforms">
+  </div>
+
+  <div class="section">
+    <h2> Limitations</h2>
+    <ul>
+        <li>This project does focus more as a learning data-analysis pipeline for python, so I'll admit there are limitations and this is quite limited. </li>
+        <li>I only used one sample and did not compare to publicly available RefSeq/GENCODE or any white papers, this was more of a tech demo.</li>
+        <li>My reference could just be rough/incomplete.</li>
+        <li>Only looked at specifically brown mouse fat.</li>
+        <li>Low sensitivity could have been a possibility.</li>
+        <li>I didn't really look into the context of the study, so not sure of the exact environmental context for these lil mice.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2> Why It Matters</h2>
+    <p>Identifying novel isoforms can uncover new mechanisms of gene regulation, alternative splicing, and tissue-specific gene expression — especially in dynamic tissues like brown fat, which plays a role in energy metabolism.</p>
+  </div>
+
+  <div class="section">
+    <h2> Repository</h2>
+    <p>Explore the code, data prep, and full Jupyter notebook with more information/indepth: </p>
+    <a class="button" href="https://github.com/51talcol21/long-read-rna-mouse-brownfat" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="section">
+    <h2> About me! </h2>
+    <p> I'm Thaddeus Lipke, a SWE/EMT-B certified grad from Columbia Uni who wanted to learn some bio-informatics and get more into python. <br>
+        Feel free to contact me, I'd like to learn more if something needs clarification or corrections <strong>(please correct me)</strong>! My contact is on the <a  href="https://github.com/51talcol21/long-read-rna-mouse-brownfat" target="_blank"> github repo for this! </a> <br>
+        This project helped me learn genomics tools like FLAIR, minimap2, and samtools — and apply them to a real-world RNA sequencing problem with a mouse dataset.</p>
+  </div>
+
+</body>
+</html>

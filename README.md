@@ -117,13 +117,15 @@ The major packages used were NanoPlot, minimap2, samtools, pyplot, pandas, seabo
 Install Python 3.12 alongside Pip with it. Install miniconda/anaconda. Then run a bunch of these commands. <br>
 The Jupyter Notebook has a decent runthrough. <br>
 
-`conda create --name flair_work_pls python=3.12`
+`conda create --name flair_work_pls python=3.12`  
 
-`conda activate flair_work_pls`
+`conda activate flair_work_pls`  
 
-`conda install -c bioconda minimap2 samtools`
-`conda install bioconda::bedtools`
-`pip install git+https://github.com/BrooksLabUCSC/flair.git`
+`conda install -c bioconda minimap2 samtools`  
+
+`conda install bioconda::bedtools`  
+
+`pip install git+https://github.com/BrooksLabUCSC/flair.git`  
 
 You will need to setup Jupyter Notebook as well, but installation is also just installing the Jupyter Notebook.
 
@@ -154,5 +156,5 @@ Tang, A.D., Soulette, C.M., van Baren, M.J. et al. Full-length transcript charac
 
 # Contact
 
-Feel free to contact me at my [email](tal2151@columbia.edu)
+Feel free to contact me at my [email](tal2151@columbia.edu)  
 I'm Thaddeus, an SWE and EMT-B certified dude who graduated from Columbia.
