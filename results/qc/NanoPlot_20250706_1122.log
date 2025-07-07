@@ -1,0 +1,26 @@
+2025-07-06 11:22:41,442 NanoPlot 1.44.1 started with arguments Namespace(threads=4, verbose=False, store=False, raw=False, huge=False, outdir='results/qc', no_static=False, prefix='', tsv_stats=False, only_report=False, info_in_report=False, maxlength=None, minlength=None, drop_outliers=False, downsample=None, loglength=True, percentqual=False, alength=False, minqual=None, runtime_until=None, readtype='1D', barcoded=False, no_supplementary=False, color='#4CB391', colormap='Greens', format=['png'], plots=['kde', 'dot'], legacy=None, listcolors=False, listcolormaps=False, no_N50=False, N50=True, title=None, font_scale=1, dpi=100, hide_stats=False, fastq=['dataset/SRR33470049.fastq'], fasta=None, fastq_rich=None, fastq_minimal=None, summary=None, bam=None, ubam=None, cram=None, pickle=None, feather=None, path='results/qc/')
+2025-07-06 11:22:41,442 Python version is: 3.11.13 (main, Jun  3 2025, 18:38:25) [Clang 15.0.0 (clang-1500.1.0.2.5)]
+2025-07-06 11:22:53,130 Nanoget: Gathered all metrics of 510727 reads
+2025-07-06 11:22:53,313 Calculated statistics
+2025-07-06 11:22:53,313 Using sequenced read lengths for plotting.
+2025-07-06 11:22:53,316 Using log10 scaled read lengths.
+2025-07-06 11:22:53,335 NanoPlot:  Valid color #4CB391.
+2025-07-06 11:22:53,335 NanoPlot:  Valid colormap Greens.
+2025-07-06 11:22:53,356 NanoPlot:  Creating length plots for Read length.
+2025-07-06 11:22:53,357 NanoPlot: Using 510727 reads with read length N50 of 858bp and maximum of 22225bp.
+2025-07-06 11:22:54,569 Saved results/qc/WeightedHistogramReadlength  as png (or png for --legacy)
+2025-07-06 11:22:55,086 Saved results/qc/WeightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2025-07-06 11:22:55,609 Saved results/qc/Non_weightedHistogramReadlength  as png (or png for --legacy)
+2025-07-06 11:22:56,150 Saved results/qc/Non_weightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2025-07-06 11:22:56,150 NanoPlot: Creating yield by minimal length plot for Read length.
+2025-07-06 11:22:56,743 Saved results/qc/Yield_By_Length  as png (or png for --legacy)
+2025-07-06 11:22:56,744 Created length plots
+2025-07-06 11:22:56,750 NanoPlot: Creating Read lengths vs Average read quality plots using 510727 reads.
+2025-07-06 11:22:57,315 Saved results/qc/LengthvsQualityScatterPlot_dot  as png (or png for --legacy)
+2025-07-06 11:22:57,847 Saved results/qc/LengthvsQualityScatterPlot_kde  as png (or png for --legacy)
+2025-07-06 11:22:57,853 NanoPlot: Creating Read lengths vs Average read quality plots using 510727 reads.
+2025-07-06 11:22:58,448 Saved results/qc/LengthvsQualityScatterPlot_loglength_dot  as png (or png for --legacy)
+2025-07-06 11:22:59,115 Saved results/qc/LengthvsQualityScatterPlot_loglength_kde  as png (or png for --legacy)
+2025-07-06 11:22:59,116 Created LengthvsQual plot
+2025-07-06 11:22:59,116 Writing html report.
+2025-07-06 11:22:59,128 Finished!

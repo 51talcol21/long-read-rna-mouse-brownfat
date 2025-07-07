@@ -6,12 +6,16 @@ references/*.fa
 references/*.gtf
 references/*.fa.gz
 references/*.gtf.gz
-results/
 results/alignments/*.bam
 results/alignments/*.sam
 *_known_juncs.bed
 *.bed
 *.mmi
+*.bam
+*.bed
+*.fa
+*.fa.*
+*.sam
 
 # Ignore system files
 .DS_Store
