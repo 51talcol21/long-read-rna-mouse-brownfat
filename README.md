@@ -14,6 +14,12 @@ While based on a single sample, this pipeline mimics modern transcriptomics work
 
 ***
 
+# Rougher Overview
+
+Discovered and quantified thousands of previously unannotated RNA isoforms using long-read sequencing of brown fat tissue. These isoforms represent alternative splicing events not included in current genome annotations and may impact gene regulation, protein function, or tissue-specific expression.
+
+***
+
 # Data Source
 
 Stuff listed above but specifics.
@@ -76,6 +82,16 @@ Long-read RNA sequencing coupled with FLAIR revealed extensive alternative splic
 
 ***
 
+# Intrepretation
+
+In this project, I analyzed RNA sequencing data from mouse brown fat tissue to identify and quantify isoforms — different versions of RNA transcripts produced from the same gene. Crucially, I discovered a large number of novel isoforms, meaning RNA transcripts that were not previously annotated in existing gene databases.
+
+These novel isoforms could represent alternative ways cells regulate gene expression and protein production in brown fat, a tissue crucial for energy metabolism and heat generation. Understanding these new isoforms helps expand our knowledge of how genes function in this tissue and might reveal new biological mechanisms related to metabolism, obesity, or thermogenesis.
+
+By identifying and quantifying these transcript variants, this work lays the groundwork for future studies to investigate their biological roles and potential as targets for metabolic disease treatments. Overall, this project demonstrates how long-read RNA sequencing combined with advanced analysis tools like FLAIR can uncover previously hidden complexity in gene expression.
+
+***
+
 # Limitations
 
 I only used one sample and did not compare to publicly available RefSeq/GENCODE or any white papers, this was more of a tech demo.  
@@ -118,6 +134,7 @@ You will need to setup Jupyter Notebook as well, but installation is also just i
 RNA sequencing/RNA seq - A laboratory technique used to study gene expression. Helps find which genes are active and how much RNA is being made. <br>
 
 Isoforms - Variants of genes that are slightly tweaked and can have different effects based on that. <br>
+Novel Isoform - RNA version of a gene that hasn't been seen/annotated before. <br>
 Exons - Kept in the final RNA <br>
 Introns - Removed during RNA splicing <br>
 Enhancers - Enhances transcription of an associated gene. Boosts how much it's expressed <br>
